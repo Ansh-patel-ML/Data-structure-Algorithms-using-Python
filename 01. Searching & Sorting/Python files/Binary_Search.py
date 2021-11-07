@@ -2,10 +2,9 @@ def BinarySearch(arr, x):  # argument: (arr, x) --> arr = array, x = element we 
     start = 0  # where we need to start searching
     end = len(arr) - 1  # where we need to end searching
 
-    while (
-            start <= end):  # start index will be <= end index if start > end that means we cross end index and we
+    while (start <= end):  # start index will be <= end index if start > end that means we cross end index and we
         # didn't find x
-        mid = (start + end) // 2  # middle element of a list/array
+        mid = (start + end) // 2  # middle element of a list/array --> better start + (end - start) / 2
 
         if arr[mid] == x:  # if middle element == x (element we are searching) then return it's index
             return mid
